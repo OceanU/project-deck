@@ -1,0 +1,44 @@
+html,body {
+	height: 100%;
+	margin: 0;
+}
+
+#firstLayer {
+	height: 336px;   /*336px standard*/
+	width: 240px;	 /*240px standard*/	
+	border: 1px solid grey;
+	border-radius: 10px;
+	display: grid;
+/*	grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  	grid-template-rows: 1fr 1fr 1.5fr 1.5fr 1fr 1fr;
+  	font-size: 40px;
+  	text-align: center;*/
+
+
+}
+
+.spinner {
+	  	  position: relative;
+  animation: mymove 1.5s 1;
+    animation-fill-mode: forwards; /*permite sa se retina pozitia ultimului keyframe*/
+    animation-timing-function: ease;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 800px;
+  	 transform: rotate(660deg);
+  	top: 100px;}
+}
+
+
+#secondLayerBack {
+	width: 96%;
+	height: 97%;
+	margin:auto;
+	border-radius: 10px;
+	border: 1px black solid;
+	background-image: url('img/pattern blue.jpg');
+	background-size: 60px 60px;
+	background-repeat: repeat;
+}
